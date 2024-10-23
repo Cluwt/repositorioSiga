@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacinha - Formulário de Cadastro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .logo h1 {
+            font-size: 18px;
+            line-height: 1.2;
+            margin-left: 20px;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .form-box {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: left;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+
+        .form-box input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            display: block;
+            margin-left: 10px;
+        }
+
+        .form-box label {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .form-box .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .form-box .btn-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-cancelar {
+            background-color: #d81b1b;
+            color: #fff;
+        }
+
+        .btn-enviar {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        footer .footer-links div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer .footer-links a {
+            margin: 5px 0;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        footer .social-icons i {
+            font-size: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Saúde&<br>Bem-Estar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Entre</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-box">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" placeholder="CPF">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="E-mail">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" placeholder="Telefone">
+
+        <label for="senha1">Senha</label>
+        <input type="password" id="senha1" placeholder="Senha">
+
+        <label for="senha2">Senha</label>
+        <input type="password" id="senha2" placeholder="Senha">
+
+        <label for="cnpj">CNPJ</label>
+        <input type="text" id="cnpj" placeholder="CNPJ">
+
+        <div class="btn-group">
+            <button class="btn-cancelar">Cancelar</button>
+            <button class="btn-enviar">Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <a href="#" class="underline">Farmacinha Web App</a>
+            </div>
+            <div>
+                <a href="#">Início</a>
+                <a href="#">Cadastre-se</a>
+                <a href="#">Entrar</a>
+                
+            </div>
+            <div>
+                <a class="underline" href="#">Atendentes</a>
+                <a href="#">Medicamentos</a>
+                <a href="#">Bulário</a>
+                <a href="#">ANVISA</a>
+            </div>
+            <div>
+                <a href="#">Pacientes</a>
+                <a href="#">Medicamentos</a>
+                <a href="#">Dúvidas</a>
+                <a href="#">Legislação</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
